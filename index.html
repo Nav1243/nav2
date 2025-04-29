@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavRaj Developer Agency</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #fff;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #d1d5db;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .btn-primary {
+            background-image: linear-gradient(to right, #8b5cf6, #ec4899);
+            border-radius: 0.5rem;
+            color: white;
+            padding: 1rem 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            background-image: linear-gradient(to right, #a855f7, #f067a6);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .form-control {
+            border-radius: 0.5rem;
+            border: 1px solid #d1d5db;
+            padding: 0.75rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            color: #4b5563;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #a855f7;
+            box-shadow: 0 0 0 3px rgba(167, 85, 247, 0.15);
+        }
+        .text-gray-300{
+            color: #d1d5db;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-900 via-purple-900 to-red-900 text-white">
+    <header class="bg-transparent py-4">
+        <div class="container flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-white">NavRaj Developer</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="#services" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="#projects" class="text-gray-300 hover:text-white transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="section text-center">
+            <div class="container">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-400 mb-6">
+                    Crafting Exceptional Spaces: Your Vision, Our Expertise!
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                    We specialize in residential, commercial, and luxury developments, delivering high-quality construction on time and within budget.
+                </p>
+                <button class="btn-primary">Get a Free Consultation Now!</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">
+                    With over 25 years in the industry, we have successfully developed 500+ projects, including residential communities, commercial buildings, and luxury estates. Our commitment to quality, innovation, and customer satisfaction sets us apart.
+                </p>
+                <div class="flex flex-wrap justify-center items-center gap-8 mt-10">
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6 max-w-sm">
+                        <h3 class="text-xl font-semibold text-white mb-4">Our Mission</h3>
+                        <p class="text-gray-300">To build sustainable and innovative spaces that enhance communities and fulfill our clients' dreams.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6 max-w-sm">
+                        <h3 class="text-xl font-semibold text-white mb-4">Our Values</h3>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2">
+                            <li>Quality</li>
+                            <li>Integrity</li>
+                            <li>Innovation</li>
+                            <li>Sustainability</li>
+                            <li>Client Satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section bg-white/5">
+            <div class="container">
+                <h2 class="section-title">Services & Specializations</h2>
+                <p class="section-subtitle">We offer a comprehensive suite of development services, tailored to meet the unique needs of each project.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-4">Residential Development</h3>
+                        <p class="text-gray-300 mb-4">Custom homes, townhouses, apartment complexes.</p>
+                        <button class="btn-primary">Learn More</button>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-4">Commercial Development</h3>
+                        <p class="text-gray-300 mb-4">Office buildings, retail spaces, hospitality projects.</p>
+                        <button class="btn-primary">Learn More</button>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-4">Luxury & High-End Projects</h3>
+                        <p class="text-gray-300 mb-4">Exclusive villas, penthouses, and gated communities.</p>
+                        <button class="btn-primary">Learn More</button>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-4">Land Acquisition & Planning</h3>
+                        <p class="text-gray-300 mb-4">Helping clients find and develop prime locations.</p>
+                        <button class="btn-primary">Learn More</button>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-white mb-4">Project Management</h3>
+                        <p class="text-gray-300 mb-4">End-to-end oversight ensuring efficiency and quality.</p>
+                        <button class="btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose-us" class="section">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <p class="section-subtitle">We deliver exceptional results through our commitment to quality, innovation, and client satisfaction.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-check-circle text-green-500 mr-3 text-2xl"></i>
+                            <h3 class="text-xl font-semibold text-white">Proven Track Record</h3>
+                        </div>
+                        <p class="text-gray-300">Successfully completed 500+ projects.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-rocket text-blue-500 mr-3 text-2xl"></i>
+                            <h3 class="text-xl font-semibold text-white">Cutting-Edge Technology</h3>
+                        </div>
+                        <p class="text-gray-300">Smart home integrations, sustainable practices.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-clock text-yellow-500 mr-3 text-2xl"></i>
+                            <h3 class="text-xl font-semibold text-white">On-Time & On-Budget Delivery</h3>
+                        </div>
+                        <p class="text-gray-300">Efficient project management.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-users text-purple-500 mr-3 text-2xl"></i>
+                            <h3 class="text-xl font-semibold text-white">Personalized Approach</h3>
+                        </div>
+                        <p class="text-gray-300">Tailored solutions for every client.</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                         <div class="flex items-center mb-4">
+                            <i class="fas fa-leaf text-green-500 mr-3 text-2xl"></i>
+                            <h3 class="text-xl font-semibold text-white">Eco-Friendly & Sustainable Construction</h3>
+                        </div>
+                        <p class="text-gray-300">Green certifications and practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section bg-white/5">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Explore our portfolio of successfully completed projects.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                    <div class="bg-white/10 rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/400x300/EEE/31343C" alt="Project 1" class="w-full h-auto">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Skyline Towers</h3>
+                            <p class="text-gray-300 mb-4">A 50-Story Commercial Marvel in Downtown [City Name]</p>
+                            <p class="text-gray-300 text-sm">Completed in 2023, this state-of-the-art commercial hub features energy-efficient architecture, premium office spaces, and a rooftop lounge.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/400x300/EEE/31343C" alt="Project 2" class="w-full h-auto">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">Luxury Residences</h3>
+                            <p class="text-gray-300 mb-4">Exclusive villas in a gated community.</p>
+                            <p class="text-gray-300 text-sm">These luxurious residences offer unparalleled comfort and style, with private pools, lush gardens, and stunning views.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/400x300/EEE/31343C" alt="Project 3" class="w-full h-auto">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-white mb-2">City Center Plaza</h3>
+                            <p class="text-gray-300 mb-4">Revitalizing urban space with modern design.</p>
+                            <p class="text-gray-300 text-sm">A mixed-use development that transformed the city center, featuring retail spaces, offices, and residential apartments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="section-title">Client Testimonials & Success Stories</h2>
+                <p class="section-subtitle">See what our clients say about their experience working with us.</p>
+                <div class="mt-10 space-y-6">
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <p class="text-gray-300 italic mb-4">"Working with [Agency Name] was an incredible experience! Our commercial space was completed ahead of schedule and exceeded expectations."</p>
+                        <p class="text-white font-semibold">- John D., CEO of [Company Name]</p>
+                    </div>
+                    <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                        <p class="text-gray-300 italic mb-4">"From the initial consultation to the final walkthrough, their team was professional, communicative, and dedicated to bringing our vision to life."</p>
+                        <p class="text-white font-semibold">- Sarah M., Homeowner</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch to start your project with us.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                    <div>
+                        <form class="bg-white/10 rounded-lg shadow-lg p-8">
+                            <input type="text" placeholder="Your Name" class="form-control" />
+                            <input type="email" placeholder="Your Email" class="form-control" />
+                            <input type="tel" placeholder="Your Phone Number" class="form-control" />
+                            <select class="form-control">
+                                <option value="">Select Project Type</option>
+                                <option value="residential">Residential</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="luxury">Luxury</option>
+                                <option value="land">Land Acquisition</option>
+                                 <option value="project_management">Project Management</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="">Select Budget</option>
+                                <option value="50000-100000">$50,000 - $100,000</option>
+                                <option value="100000-200000">$100,000 - $200,000</option>
+                                <option value="200000-500000">$200,000 - $500,000</option>
+                                <option value="500000+">$500,000+</option>
+                            </select>
+                            <textarea placeholder="Project Details" class="form-control" rows="4"></textarea>
+                            <button class="btn-primary w-full">Get a Free Consultation Today!</button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="bg-white/10 rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-semibold text-white mb-4">Our Office</h3>
+                            <p class="text-gray-300">
+                                123 Main Street<br>
+                                Anytown, CA 12345<br>
+                                <i class="fas fa-phone mr-2"></i> (123) 456-7890<br>
+                                <i class="fas fa-envelope mr-2"></i> info@navrajdeveloper.com
+                            </p>
+                        </div>
+                        <div class="mt-6 bg-white/10 rounded-lg shadow-lg p-6">
+                            <h3 class="text-xl font-semibold text-white mb-4">Connect With Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-300 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-lg"></i></a>
+                                <a href="#" class="text-gray-300 hover:text-white transition duration-300"><i class="fab fa-linkedin-in text-lg"></i></a>
+                                <a href="#" class="text-gray-300 hover:text-white transition duration-300"><i class="fab fa-instagram text-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-6">
+        <div class="container text-center text-gray-400">
+            &copy; 2024 NavRaj Developer. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
